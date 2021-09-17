@@ -1,0 +1,176 @@
+<!-- Author: Neil Bryan Caoile 
+     StudentId: 817643697
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Assignment 2 for Neil-Bryan Caoile</title>
+  </head>
+  <body>
+    <!-- Video Background -->
+    <video id="videoBG" autoplay muted loop>
+      <source src="videos/bg.mp4" type="video/mp4" />
+    </video>
+
+    <header>
+      <h1>Assgnment 2</h1>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Register Now!</h1>
+        <form
+          name="myForm"
+          action="html/thank-you.html"
+          onsubmit="return validation()"
+        >
+          <!-- Username -->
+          <div class="input-container">
+            <div class="inner-container">
+              <label for="username">Username</label>
+              <input type="text" placeholder="username" id="username" />
+              <img
+                class="icon"
+                id="icon-checker"
+                src="images/check-mark.png"
+                alt="icon-checker"
+              />
+            </div>
+            <!-- Error Msg -->
+            <div>
+              <span class="error-message"><br /></span>
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="input-container">
+            <div class="inner-container">
+              <label for="password">Password</label>
+              <input type="password" placeholder="password" id="password" />
+              <img
+                class="icon"
+                id="icon-checker"
+                src="images/check-mark.png"
+                alt="icon-checker"
+              />
+            </div>
+            <!-- Error Msg -->
+            <div>
+              <span class="error-message"><br /></span>
+            </div>
+          </div>
+
+          <!-- Check password -->
+          <div class="input-container">
+            <div class="inner-container">
+              <label for="c-password">Check Password</label>
+              <input type="password" placeholder="password" id="password" />
+              <img
+                class="icon"
+                id="icon-checker"
+                src="images/check-mark.png"
+                alt="icon-checker"
+              />
+            </div>
+            <!-- Error Msg -->
+            <div>
+              <span class="error-message"><br /></span>
+            </div>
+          </div>
+
+          <!--Contact Number -->
+          <div class="input-container">
+            <div class="inner-container">
+              <label for="contact">Contact Number</label>
+              <input type="text" placeholder="#" id="contact" />
+              <img
+                class="icon"
+                id="icon-checker"
+                src="images/check-mark.png"
+                alt="icon-checker"
+              />
+            </div>
+            <!-- Error Msg -->
+            <div>
+              <span class="error-message"><br /></span>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="input-container">
+            <div class="inner-container">
+              <label for="email">Email</label>
+              <input type="email" placeholder="email" id="email" />
+              <img
+                class="icon"
+                id="icon-checker"
+                src="images/check-mark.png"
+                alt="icon-checker"
+              />
+            </div>
+            <!-- Error Msg -->
+            <div>
+              <span class="error-message"><br /></span>
+            </div>
+          </div>
+
+          <!-- Gender -->
+          <div>
+            <div class="inner-container">
+              <label for="">Gender</label>
+              <div class="radio-container">
+                <div class="a">
+                  <label for="male"
+                    ><img class="gender" src="images/male.svg" alt="male-icon"
+                  /></label>
+                  <input type="radio" id="male" value="male" name="gender" />
+                </div>
+                <div class="a">
+                  <label for="female"
+                    ><img
+                      class="gender"
+                      src="images/female.svg"
+                      alt="female-icon"
+                  /></label>
+                  <input
+                    type="radio"
+                    id="female"
+                    value="female"
+                    name="gender"
+                  />
+                </div>
+              </div>
+
+              <img
+                class="icon"
+                id="icon-checker"
+                src="images/check-mark.png"
+                alt="icon-checker"
+              />
+            </div>
+
+            <!-- Error Msg -->
+            <div>
+              <span class="error-message"><br /></span>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="btn-container">
+            <div>
+              <button id="submit">Submit</button>
+              <button id="reset">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <span class="copyRight"> &#169; codecaoile </span>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

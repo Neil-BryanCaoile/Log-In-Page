@@ -1,0 +1,166 @@
+/* Author: Neil-Bryan Caoile
+   StudentId: 817643697
+*/
+body {
+  background-size: cover;
+  color: #581c0c;
+  background-color: #ce836e;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "fantaisie";
+}
+.icon {
+  position: absolute;
+  width: 1.5em;
+  height: 1.3em;
+  right: -30px;
+  top: 0;
+  visibility: hidden;
+}
+.unavailable {
+  color: #e20049;
+}
+.accepted {
+  color: #86ee60;
+}
+.visible {
+  visibility: visible;
+}
+.great {
+  color: #a335ee;
+}
+.legend {
+  color: #ff8000;
+}
+
+/* Main */
+.container {
+  position: relative;
+  border: solid #3d1706;
+  width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #fbffc59c;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+input label {
+  display: block;
+}
+.inner-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gender {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  display: block;
+}
+.radio-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+.a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-container div {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  color: #3d1706;
+  width: 45%;
+  background-color: #d6a64cb9;
+  border: solid #3d1706a9 2px;
+  border-radius: 3px;
+}
+button:hover {
+  background-color: #e8ac3f;
+  cursor: pointer;
+  color: white;
+  border: solid #3d1706 2px;
+}
+
+/* Background Video */
+#videoBG {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
+    background-image: url("https://opengameart.org/sites/default/files/com_fire_cave.png");
+  }
+}
+
+@media (max-width: 767px) {
+  #videoBG {
+    display: none;
+  }
+}
+/* Add fonts */
+@font-face {
+  font-family: "fantaisie";
+  src: url(../fonts/FantaisieArtistique.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+.copyRight {
+  color: white;
+  margin-top: 3%;
+  display: block;
+  text-align: center;
+  text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgb(81, 67, 21),
+    0px 4px 7px rgb(81, 67, 21);
+}
+
+header h1 {
+  color: #581c0c;
+  margin-left: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+  text-shadow: 3px 0px 7px #faffb2, -3px 0px 7px #faffb2, 0px 4px 7px #faffb2;
+}
+
+header h1:hover {
+  color: white;
+  cursor: pointer;
+}

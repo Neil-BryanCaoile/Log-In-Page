@@ -1,0 +1,18 @@
+/* Author: Neil-Bryan Caoile
+   StudentId: 817643697
+*/
+.heart {
+  width: 20em;
+  height: 20em;
+}
+h1 {
+  font-size: 5rem;
+}
+body {
+  display: flex;
+  height: 100vh;
+}
+.container {
+  justify-content: center;
+  align-items: center;
+}
